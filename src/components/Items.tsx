@@ -5,11 +5,8 @@ import { useKey } from '@/composables/useKey';
 interface ItemData {
   id?: string;
   onSelect?: (data: ItemData) => void;
-  wrapperElementTag?: string;
-  wrapperElementAttributes?: Record<string, any>;
-  expandMenuComponent?: any;
-  expandMenuComponentProps?: Record<string, any>;
-  expandMenuItemData?: ItemData[];
+  wrapperTag?: string;
+  wrapperAttributes?: Record<string, any>;
   [key: string | number]: any;
 }
 
